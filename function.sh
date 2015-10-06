@@ -4,3 +4,5 @@ function list(){
   echo "$*";
   return 0;
 }
+
+#export -f functionName  -> To export a function so that it can be used by other scripts

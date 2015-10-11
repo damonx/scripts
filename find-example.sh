@@ -41,7 +41,7 @@ find . -type f -atime +7 -print
 #Example -amin, -mmin, -cmin
 find . -type f -amin +7 -print
 
-# -newer: 
+# -newer:
 find . -type f -newer file.txt -print
 
 # find files based the size:
@@ -70,3 +70,6 @@ find . type -f "*.java" -exec cat {} \;>all_java_files.txt
 
 # find files which were modified over 10 days ago and copy them into OLD folder:
 find . type -f -mtime +10 -name "*.txt" -exec cp {} OLD \;
+
+# prune directories:
+find . \( -name ".git" -prune \) -o \( -type f -print \)

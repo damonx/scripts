@@ -1,0 +1,9 @@
+alias ll='ls -l'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+setJdk8
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/damonx/.sdkman"
+[[ -s "/Users/damonx/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/damonx/.sdkman/bin/sdkman-init.sh"

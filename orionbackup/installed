@@ -1,0 +1,5 @@
+$ brew list
+ant     boot2docker figlet      gradle      jython      mongodb     parallel    python3     scala       watch
+babel       coreutils   gdbm        groovy      libcaca     nmap        pkg-config  rabbitmq    sqlite      wget
+bash-completion docker      gettext     htop        libyaml     node        ponysay     readline    toilet      xz
+bfg     dos2unix    go      icu4c       maven       openssl     python      ruby        tree

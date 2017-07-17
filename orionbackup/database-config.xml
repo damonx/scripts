@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><com.orchestral.core.configuration.api_6_0.ConfigurationService xmlns="http://www.orionhealth.com/configuration" version="3" date="2016-08-10T21:11:53.786" platformId="-1921116942" type="SNAPSHOT" username="core-platform:administrator">
+    <com.orchestral.core.database.PhysicalDatabase id="java:comp/env/jdbc/orion/repository">
+        <connectionDetails>
+            <com.orchestral.core.database.impl.ConnectionDetailsImpl>
+                <driver>
+                    <com.orchestral.core.database.impl.OracleThinDatabaseDriver refId="Oracle Thin"/>
+                </driver>
+                <parameters null="true"/>
+                <user>
+                    <com.orchestral.core.database.impl.UserDetailsImpl>
+                        <password>SKCDSVLWJT0E6A81D5255FDF7A10FD57A561A86F10437B32C2A70584545B988A2D685049B4AB776E9E</password>
+                        <username>nightwatcher</username>
+                    </com.orchestral.core.database.impl.UserDetailsImpl>
+                </user>
+            </com.orchestral.core.database.impl.ConnectionDetailsImpl>
+        </connectionDetails>
+        <databaseName/>
+        <databaseServer>
+            <com.orchestral.core.database.impl.DatabaseServerImpl refId="devoracle12cv"/>
+        </databaseServer>
+        <id>java:comp/env/jdbc/orion/repository</id>
+        <initSql null="true"/>
+        <poolingProfile>
+            <com.orchestral.core.database.impl.DatabasePoolingProfileImpl refId="Default Pooling Profile"/>
+        </poolingProfile>
+        <tablespace null="true"/>
+    </com.orchestral.core.database.PhysicalDatabase>
+    <com.orchestral.core.database.impl.DatabasePoolingProfileImpl id="Default Pooling Profile">
+        <adjustPeriod>600</adjustPeriod>
+        <connCheckLevel>2</connCheckLevel>
+        <connMaxAge>5</connMaxAge>
+        <maxConnPool>20</maxConnPool>
+        <maxOpenTime>60</maxOpenTime>
+        <maxPreparedStatements>20</maxPreparedStatements>
+        <maxWaitTime>10</maxWaitTime>
+        <maxWaiters>100</maxWaiters>
+        <minConnPool>0</minConnPool>
+        <name>Default Pooling Profile</name>
+        <samplingPeriod>600</samplingPeriod>
+    </com.orchestral.core.database.impl.DatabasePoolingProfileImpl>
+    <com.orchestral.core.database.impl.DatabaseServerImpl id="devoracle12cv">
+        <adminConnectionDetails>
+            <com.orchestral.core.database.impl.ConnectionDetailsImpl>
+                <driver null="true"/>
+                <parameters null="true"/>
+                <user>
+                    <com.orchestral.core.database.impl.UserDetailsImpl>
+                        <password null="true"/>
+                        <username null="true"/>
+                    </com.orchestral.core.database.impl.UserDetailsImpl>
+                </user>
+            </com.orchestral.core.database.impl.ConnectionDetailsImpl>
+        </adminConnectionDetails>
+        <defaultTablespace null="true"/>
+        <displayName>devoracle12cv</displayName>
+        <host>devoracle12cv</host>
+        <port>1521</port>
+        <serverType>ORACLE</serverType>
+        <systemId>volatile</systemId>
+        <testStatement>select 1 from dual</testStatement>
+    </com.orchestral.core.database.impl.DatabaseServerImpl>
+    <com.orchestral.core.database.impl.OracleThinDatabaseDriver id="Oracle Thin">
+        <className>oracle.jdbc.OracleDriver</className>
+        <displayName>Oracle Thin</displayName>
+        <type>ORACLE</type>
+        <urlFormat><![CDATA[jdbc:oracle:thin:@<%=host%><%if port%>:<%=port%><%else%>:1521<%end if%><%if serviceId!=null && serviceId.length()>0%>:<%=serviceId%><%end if%>]]></urlFormat>
+    </com.orchestral.core.database.impl.OracleThinDatabaseDriver>
+</com.orchestral.core.configuration.api_6_0.ConfigurationService>

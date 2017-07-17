@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?><com.orchestral.core.configuration.api_6_0.ConfigurationService xmlns="http://www.orionhealth.com/configuration" version="3" date="2016-08-08T09:31:16.088" platformId="-1921116942" type="SNAPSHOT" username="core-platform:administrator">
+    <com.orchestral.core.certificate.api_6_3.OhpCertificate id="OHP Client CA">
+        <alias>OHP Client CA</alias>
+        <certificateFile>
+            <com.orchestral.core.configuration.api_6_0.FileType>
+                <content>MIIDPjCCAiagAwIBAgIIUS598aQ/mLEwDQYJKoZIhvcNAQELBQAwFjEUMBIGA1UEAxMLT0hQIFJvb3QgQ0EwHhcNMTYwODA3MjA1NDEwWhcNMjEwODA2MjA1NDEwWjAYMRYwFAYDVQQDEw1PSFAgQ2xpZW50IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi3lXpIKmTXutuLsHgg19KXFbcuYCvBKHGioWqsdzTkdaCSCTVRy+EQQZ+aWKOxsq6pdep4th4O3/ixyzB3ITZqf2nv0n/Vy5mjwBnsS+nsuFigtF6p64c1fDu1L0xQV8q9HolEy/j3x18bexDR0B/SRXVeMImKFYZvcrcJm6VYU30jCHEvhEXg2ufvbuZWE2epAVSEbvsnBTZKQdkCeR9zEvICW3HFLtRBiCflgJjHlZX4fiQ64jreu7uiLHgSV8a4UeVh/lyD4FshnlKIG0G3vg3AK8z50HlV8hLmAKfgr4NoVQ5pgbaTOCMuP93cdrEDnFTj05jEjsc2ssdzQs7QIDAQABo4GNMIGKMBIGA1UdEwEB/wQIMAYBAf8CAQIwDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBTthj2bcEx9F4LP6gE7AeoiX7aYjDBFBgNVHSMEPjA8gBTIJoKxk3k6Vb10gZB5QKuTXdOztKEapBgwFjEUMBIGA1UEAxMLT0hQIFJvb3QgQ0GCCE8fn1bp0+XoMA0GCSqGSIb3DQEBCwUAA4IBAQCBwtu+g2v7QfQrRDP8q8yEv882a5SXHWcnsmRgn3/C/Ob3VzKh09mtwsV/VrwqPBORoSE7yjgBXHfFANVGw5P8nszMvH4gAMu5ro60SqaJGHtETqU5T5n61WSqkaftLawhVUCjUUPjoFqpbCIX5yox8oT5Ps7jrPQmi8NPEAcyWQKyBCfWDVkpqHLuQG28otZicjTm08OJ8T05IkbiSRUzjNPUWbBqAI+eU0cYEGGPyfU86Uy2PCKBfeq6ZLYKttzN/BW4nzK8OUtQCIgVp3V1juXSeC3t02bdDF3cgFarzy2XaBIRqMSsEJy8tv+LGacRRR2G04QDqPjdaN8oKYGO</content>
+                <name>OHP Client CA.cer</name>
+            </com.orchestral.core.configuration.api_6_0.FileType>
+        </certificateFile>
+    </com.orchestral.core.certificate.api_6_3.OhpCertificate>
+    <com.orchestral.core.certificate.api_6_3.OhpCertificate id="OHP Default TCP Server">
+        <alias>OHP Default TCP Server</alias>
+        <certificateFile>
+            <com.orchestral.core.configuration.api_6_0.FileType>
+                <content>MIIDiDCCAnCgAwIBAgIIcBU3v966urIwDQYJKoZIhvcNAQELBQAwGDEWMBQGA1UEAxMNT0hQIFNlcnZlciBDQTAeFw0xNjA4MDcyMDU0MTFaFw0yMTA4MDYyMDU0MTFaMCExHzAdBgNVBAMTFk9IUCBEZWZhdWx0IFRDUCBTZXJ2ZXIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCFzO7aE56Q17/KJNfu2d/yErQ+k1o6XttSWrOZyyd8Yn4EP4WW8hI1OU5XPiWWRj7ppaoLjL31Qd1joa6iCf0CRdaYTAeWdFvcmOT13zcKbw9s18PL58u/CgDiwVthAHZ/pL3PIxVLnccIa+EXnD0SX15TcjQ8XdOrlT9vBnTWIj+5Swu41qjr3WuN8al8WrU2SryB+jStga5kkALda3SSEHuahGryQxMogrKlKJqShGLDnYdDdKrNrSdiDqcc0uQe33VjX0fgzrk/+OdztVedeIoW2vilws3atAuIRLAqe00Xy5f/4ScgHYahFWhFDA9Ebx+I2/6bEgE2yqJNJ/DxAgMBAAGjgcwwgckwDAYDVR0TAQH/BAIwADAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0OBBYEFMaUSLljkqxRUWGDe2p8EMdo7TlNMEUGA1UdIwQ+MDyAFD86KxNAJImePrlsGgVGIHciQ1ZuoRqkGDAWMRQwEgYDVQQDEwtPSFAgUm9vdCBDQYIIYDIiQVfpgEswHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMCQGA1UdEQQdMBuCGWRhbW9ueC1tYnAub3Jpb24uaW50ZXJuYWwwDQYJKoZIhvcNAQELBQADggEBADEPx43UWn19m9zuWH4ZjaxL+2WhBcufexvhzzc17sD7OxshdGCN/+gRlhjSGsOfo/5Bo4UBwZ30nTabXRnldSsXvBUst24dNu+EXwXLq5F8D5N4k+rPfTYnEJW7lYT09kgnO7SY+RuwRCDvnUbMG36hFai+vw2O/OXFq+vgbYDYWmdGlcN9OtrPxnS/l3Yf7YTLQQtCHV0MgpRMoYhMhbZueXjzkFncWXr9rzpYs6wvqyGruBa7f/5atMhAaZsN6PzLaTRH16H6fZmN6hsswe6H4FdYLTeUoR4OO7B0AR69i67mmeTDrpyAxf5TiY56bFKoRAKIy3COMml+UAwM0mY=</content>
+                <name>OHP Default TCP Server.cer</name>
+            </com.orchestral.core.configuration.api_6_0.FileType>
+        </certificateFile>
+    </com.orchestral.core.certificate.api_6_3.OhpCertificate>
+    <com.orchestral.core.certificate.api_6_3.OhpCertificate id="OHP Default Web Service Server">
+        <alias>OHP Default Web Service Server</alias>
+        <certificateFile>
+            <com.orchestral.core.configuration.api_6_0.FileType>
+                <content>MIIDkDCCAnigAwIBAgIICmlunXkI0ykwDQYJKoZIhvcNAQELBQAwGDEWMBQGA1UEAxMNT0hQIFNlcnZlciBDQTAeFw0xNjA4MDcyMDU0MTFaFw0yMTA4MDYyMDU0MTFaMCkxJzAlBgNVBAMTHk9IUCBEZWZhdWx0IFdlYiBTZXJ2aWNlIFNlcnZlcjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKNSNnBGQm2hCJF/aq27PvO02TbHD5Utm0hsQduidlXcgQEry7+F5dBsu26VOnYi1IMPrBO5U/vM8zJYXEXHQM+tDmOH7zbTXVE7LfrvEDdiPQk1u8IJUR9s+tl8drI/uKY683Bgh/poPiyVddemvBezpVluIb7OcM4bpoY0+k1hbv8Bd32HE9FqUBJofjpI8G8SDtaJ0fu1p23K56DJTE6W4bib//F1RKyy3IEsM0bfMxYmA6kBYMy5SE7h4haXi+QpdobJgRXXztBkDKZbTf9vY4vtQMSlpbzFxenIn2XPsvrzpDiVLLQU/L/zAdPcKOOSRxbZFgAppqxyD2jXRqUCAwEAAaOBzDCByTAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIFoDAdBgNVHQ4EFgQU0W5DaTnWqX5ap+dUmxCjyd69bCAwRQYDVR0jBD4wPIAUPzorE0AkiZ4+uWwaBUYgdyJDVm6hGqQYMBYxFDASBgNVBAMTC09IUCBSb290IENBgghgMiJBV+mASzAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwJAYDVR0RBB0wG4IZZGFtb254LW1icC5vcmlvbi5pbnRlcm5hbDANBgkqhkiG9w0BAQsFAAOCAQEAWwYVopcIGb4Nr7LeKqW2zD9eoBZEGOAVspwRrkScuoEvUmkuYaDY+Vjs32Esdl9C6c0W6gJIOayNcw+eHWY5V0QgJ38yjpuvIHS38cEEWcPMPGe1OiFSQ1rW3EEsONO1LNHBtjRdzeLPdqjJrLnra0FwjLcOt1AVSWBDpistM2WPfU609XLYXscObsAT0c16XpAil5iZ/Q2Ak452fh+8XSskb0M5AlZeS6LD5Tk6QXkWe3bQ6wihmo5E8Nfpe5TYU/c9Q/AY/83dvY7VKxjg5wjxLHrqb22/cU+ggwyGD25mXTH0GItGYkjNpPv/4TYj03gpjntqIiWMfVxceXHTCA==</content>
+                <name>OHP Default Web Service Server.cer</name>
+            </com.orchestral.core.configuration.api_6_0.FileType>
+        </certificateFile>
+    </com.orchestral.core.certificate.api_6_3.OhpCertificate>
+    <com.orchestral.core.certificate.api_6_3.OhpCertificate id="OHP Server CA">
+        <alias>OHP Server CA</alias>
+        <certificateFile>
+            <com.orchestral.core.configuration.api_6_0.FileType>
+                <content>MIIDPjCCAiagAwIBAgIIYDIiQVfpgEswDQYJKoZIhvcNAQELBQAwFjEUMBIGA1UEAxMLT0hQIFJvb3QgQ0EwHhcNMTYwODA3MjA1NDEwWhcNMjEwODA2MjA1NDEwWjAYMRYwFAYDVQQDEw1PSFAgU2VydmVyIENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiI7We1tHohzZhc5ehvKMaMYTL1FCBaJmrU5HIXQUWrQKmNqq8sxWqMZQtpjyfDF1YZxnhdLxquFvp0+hZggZkAQDPChml7SxBxrq6iPmwXCm7mlTZz2SB2w8735oJW5ex8e2pT4QhWs457X7AIqnj/Fnvk6vTXPm2Ay5TDoiSeTwVgQXfCdd+ZT8ltvKyAdxMuOa6TC08cFOB6AxcTngoviGO2iG2xApa7pZDi/I7eG84qCYIBQbSylfKRxRabIJEfBuKaLruThq82uosiQnJyc9zEDezSpyqURum9GMgIy6HfiRC9eod4xvPlrtzBSi2q9NPBBUyPxvZX1sVcfYuwIDAQABo4GNMIGKMBIGA1UdEwEB/wQIMAYBAf8CAQIwDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBQ/OisTQCSJnj65bBoFRiB3IkNWbjBFBgNVHSMEPjA8gBTIJoKxk3k6Vb10gZB5QKuTXdOztKEapBgwFjEUMBIGA1UEAxMLT0hQIFJvb3QgQ0GCCE8fn1bp0+XoMA0GCSqGSIb3DQEBCwUAA4IBAQAspmbkQXDuB/EoxWNJ2CTzVlmMuvCBEY/Iy4KobzbQBP95MfFwFNyAs9H2vwENfztwjdGnfMPeI57tiH0hhGv00AwZe8QZYNdILkIlx/2oQtiFWThwwUT7CEx3h1Z5fHCUJOtHEfQcbbZhTqIotR/022aX6cd2ftqjn0Rz7P/Cpt+IgNul1GRnYUg3Z7Rx35IKYk7rRHjXUnFhEZABeUib/a9rDnj1RybAE6FBsiAE0P5EcW5SRNIqBiDZPdKeK11nTBf5yEUsc+o7oopOb3Hbt4bsOm0fv/AG6Gg7MX/TntBjDUXSHH4Q7Q94XJNQ/Fp9DVsHTiwUddkncEwzAw7E</content>
+                <name>OHP Server CA.cer</name>
+            </com.orchestral.core.configuration.api_6_0.FileType>
+        </certificateFile>
+    </com.orchestral.core.certificate.api_6_3.OhpCertificate>
+    <com.orchestral.core.certificate.api_6_3.OhpPrivateKey id="OHP Default TCP Server">
+        <alias>OHP Default TCP Server</alias>
+        <certificate>
+            <com.orchestral.core.certificate.api_6_3.OhpCertificate refId="OHP Default TCP Server"/>
+        </certificate>
+        <keyData>MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCFzO7aE56Q17/KJNfu2d/yErQ+k1o6XttSWrOZyyd8Yn4EP4WW8hI1OU5XPiWWRj7ppaoLjL31Qd1joa6iCf0CRdaYTAeWdFvcmOT13zcKbw9s18PL58u/CgDiwVthAHZ/pL3PIxVLnccIa+EXnD0SX15TcjQ8XdOrlT9vBnTWIj+5Swu41qjr3WuN8al8WrU2SryB+jStga5kkALda3SSEHuahGryQxMogrKlKJqShGLDnYdDdKrNrSdiDqcc0uQe33VjX0fgzrk/+OdztVedeIoW2vilws3atAuIRLAqe00Xy5f/4ScgHYahFWhFDA9Ebx+I2/6bEgE2yqJNJ/DxAgMBAAECggEAek/60PQ6ceIoexvvIXOeWuZqSwHc65snF0O/BwpF0FkhJbUD5BbqOilmyi4Poi4Y+PHuXpyMUhWh0qBMyegjl95L6/Ekxo8cIq7KL1GcOTeJfFBJtq7w/HSilqd3Z1dK/CiXMzG5F+Tlu3cSz8iNs6vmyJWP1tdW1nWbBV17lPtkuYJsdpc9vbIugdKmM7AMgMw3dUsv7AVRTJ5sK8DuSHF2FyGI9ZQ0tSuO3kyDGp/TgwvPjU9/NEsGjE9Md1ndfm6tA1Dod/aunJCKzrxvnIMbHykJ62+/kvi8sE4p0Po/Cv7sMlBYXOIUiNRgA6kHgTWS8rsdLw6257vuCjc1oQKBgQDipBFH8xJkb4Zyhplsqd4oZ29d05su8kv7pmBoFqdfNhSWP7g5xC+W/db0Z1u8Aj4BWfAP3W1zqPpIm62JCT8bXXQgMJaDQ3epSV50D94/vu+idVB+f7z5SS4FLRiyMR3ttR7BOlnjRma1IYkz/YPtzz2nPOwewRo+39SpB1soZQKBgQCXIhDLasBcSpE49DJEVTUYRxKTr7xd58OcJ9w99ubXKcAy4gIGINVI72b0edTCke/8pDItUwIt9Qb8hLPtJ9Aq7raRJCDAZ/tGM009KvFytfi/95mZZlewixhykCVTWGOep+YttNF+eMgipgtQ6tyCq1QZJqiOoMkzKgEnLpVPnQKBgF3EF0o3LILVCUDUoyEr3jfFI3QkGe4AXKNOoFAwHyrrCvVmg2eS3UWQ25/eKzvLia+xb/qAV8okPPhRQCiT5MIDlgnDUGIaRaWKL0PBVOf2rNn/wz+yxZI1To7hq3f9ji5MYt76rzmyZMfHiiYyWqTGuvE36VCH/73HiQoteu9pAoGAa+KOeJcwz/EO78gqJetpZnY9xZ1aavJqCYvOxZD9wjR0lh4N8c/4UQNMzFI31dkVppSTmRU7ZhEWtqYIRs/34t3bB4rxskfH8JnoljSUfR13f5nBVObgzA7PGeDaND/RhU03nAMK1SxlOY6sX0v4s3KYKwgUpRQT7Gkcv5qaTWUCgYEAvm3r2Yqxa0iJK8TzawW73v4QqvxB9wmhhayjy9uCKPHarX2YGO4ms3Nk3aLHRYQbJ/twppV72n5o9l8y4etq1U7iirhqUsnXpPQN1iOz9Kh+gXDBVPYf2jgvX0o+UaiJimgJlzVCCwkoUZ/QP2G3vyY7xqE8XSCUQN9MDxQRvOc=</keyData>
+        <type>RSA</type>
+    </com.orchestral.core.certificate.api_6_3.OhpPrivateKey>
+    <com.orchestral.core.certificate.api_6_3.OhpPrivateKey id="OHP Default Web Service Server">
+        <alias>OHP Default Web Service Server</alias>
+        <certificate>
+            <com.orchestral.core.certificate.api_6_3.OhpCertificate refId="OHP Default Web Service Server"/>
+        </certificate>
+        <keyData>MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjUjZwRkJtoQiRf2qtuz7ztNk2xw+VLZtIbEHbonZV3IEBK8u/heXQbLtulTp2ItSDD6wTuVP7zPMyWFxFx0DPrQ5jh+82011ROy367xA3Yj0JNbvCCVEfbPrZfHayP7imOvNwYIf6aD4slXXXprwXs6VZbiG+znDOG6aGNPpNYW7/AXd9hxPRalASaH46SPBvEg7WidH7tadtyuegyUxOluG4m//xdUSsstyBLDNG3zMWJgOpAWDMuUhO4eIWl4vkKXaGyYEV187QZAymW03/b2OL7UDEpaW8xcXpyJ9lz7L686Q4lSy0FPy/8wHT3CjjkkcW2RYAKaascg9o10alAgMBAAECggEBAJIC6xZ/Sd43DLD/iAEgGQzKTzOwzZah+mTKHCre2Qq0I0VHwVVNwQMQYpVfpq99Ph6aAU507sd8GKSW6I+drqy8W9PR8KREXPZFgTsJRacuFcFJH74+lB8TUETmCDwdydgbdg6uzoKpdYRobr1InHpYKmiElHjAmYs6nyr27BwGoMuUH/qYx+MNJT9y59bg6y9cLfXl6m3GYGTec98SQ+8A+6vLXmcKa9k8bclM91NVdWvrKCke2SBqjYsQQfnhVGULxs5atUMQZ8f8ivysL16a2rm1jIaDoxnPfsusm3APlHPbf1LdgoMAKbn3rbh71sb6HB5Emq9jUO6jWxYMqbUCgYEA7k/ck8lNquWt/u/Hdn+xrjNnyA3/QdEKEeYks501h+n4/QiTP2af0jbD7Dfhciu5771znSXLPhniTzIHywp5GJDNs/a+PGV7M9bNEW+JB5b0Ho7fESEYu7WrYvkZLqheaQgWhm6KtbNhYrTaPe1Bm1+inhtW3RgdmO/hr19CWvsCgYEAr3F1hZ4IpYuTmBFbS5xeofeKz91TkNGtgp0+KubZQYuXTk158ivMa7G1STX9WZVk9Hvc1IDdeSOcrs1DGvUNXquhTU7uTlvub1MASiPFRrlAOv5WumOhtHDoIOOfsWt3V6lzkko21UoVvJzJ0Fkfz2DqvWg7ANygNJ1TqBW/Mt8CgYBErq+byECiKF/lQaXy+Qp0ckxO0/nlNiH41qNtQLnU2hHwmzAU7bbSFwaQZeqLxR5pgeh4OhRBaaRXvsuQMQyFj/Y5D7v0HCtN3XJsvAB6N39T70lK3ocKUml6tOAVGmFbVAFp7SH9DB3dHNJpVp+57+4mMyrtva2KDli0+nddUQKBgEmMVOoo8BMGSl+LlyxBZ2Ka9bRiYm/plsWUycUOdbGGpW2MCT0+oznai9cfLRBrEqFzc4YaZ74q8bpODn20kWBIrxxLpJdw7qn4r7xk9oTJkGWqzgzhS57rXkS7Z+zm0mcLgImpVwdfQXGKgQg49J7pUD8K/QFFfFvSQInMZBUdAoGAeZSeCX6xkl3OAGb9Fq894myLjwgGkOd572tO+yXvXdY0mhQI1DqaTByKA8W5DloyHQ9Y/70JJ7YEuuo02zFuD0Po+mvNAxuHsQi5TsWAS96Rb7OgdU1zTk31YVr+rWETg7TQTCISOz+q9EX9gCtmXuekYEfBYE3CElmv/wbKZCU=</keyData>
+        <type>RSA</type>
+    </com.orchestral.core.certificate.api_6_3.OhpPrivateKey>
+    <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile id="Default Archive Profile">
+        <backupDirectory>data/message_archive</backupDirectory>
+        <daysTillOld>30</daysTillOld>
+        <name>Default Archive Profile</name>
+        <numberToKeep>1000</numberToKeep>
+        <strategy>DISABLED</strategy>
+    </com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="Clinical Event Bus - Inbound Messaging" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>Clinical Event Bus - Inbound Messaging</endpoint>
+        <poolSize>10</poolSize>
+        <port>8049</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>8049</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="DAS - EDI Messaging" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>DAS - EDI Messaging</endpoint>
+        <poolSize>10</poolSize>
+        <port>23007</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>23007</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="DAS - Foreign Xml Messaging" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>DAS - Foreign Xml Messaging</endpoint>
+        <poolSize>10</poolSize>
+        <port>23008</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>23008</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="DAS - Native Xml Messaging" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>DAS - Native Xml Messaging</endpoint>
+        <poolSize>10</poolSize>
+        <port>23009</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>23009</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="HL7 ADT Messaging Inbound" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>HL7 ADT Messaging Inbound</endpoint>
+        <poolSize>10</poolSize>
+        <port>23020</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>23020</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="HL7 PPR Messaging Inbound" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>HL7 PPR Messaging Inbound</endpoint>
+        <poolSize>10</poolSize>
+        <port>23022</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>23022</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="HL7 Pharmacy Messaging Inbound" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>HL7 Pharmacy Messaging Inbound</endpoint>
+        <poolSize>10</poolSize>
+        <port>23023</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>23023</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration id="XDS Messaging" version="1">
+        <backLog>0</backLog>
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>XDS Messaging</endpoint>
+        <poolSize>10</poolSize>
+        <port>10020</port>
+        <portMap>
+            <entry>
+                <key>-902786529</key>
+                <value>10020</value>
+            </entry>
+        </portMap>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <threadPriority null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.InboundSecurityPolicy id="Default Inbound Security">
+        <authenticateClients>true</authenticateClients>
+        <certificates>
+            <value>
+                <com.orchestral.core.certificate.api_6_3.OhpCertificate refId="OHP Client CA"/>
+            </value>
+        </certificates>
+        <cipherType>FIPS</cipherType>
+        <customCiphers null="true"/>
+        <minimumProtocol>TLSv10</minimumProtocol>
+        <name>Default Inbound Security</name>
+        <privateKey>
+            <com.orchestral.core.certificate.api_6_3.OhpPrivateKey refId="OHP Default TCP Server"/>
+        </privateKey>
+    </com.orchestral.foundation.messaging.tcp.admin.InboundSecurityPolicy>
+    <com.orchestral.foundation.messaging.tcp.admin.OutboundEndpointConfiguration id="Puppet Patient Patient Messaging" version="1">
+        <description null="true"/>
+        <encoding null="true"/>
+        <endpoint>Puppet Patient Patient Messaging</endpoint>
+        <host>localhost</host>
+        <maxRetries>10</maxRetries>
+        <poolSize>1</poolSize>
+        <port>23020</port>
+        <profile>
+            <com.orchestral.foundation.messaging.tcp.admin.MessageArchiveProfile refId="Default Archive Profile"/>
+        </profile>
+        <runOnStartup>true</runOnStartup>
+        <securityPolicy null="true"/>
+        <waitResponseTimeout>600000</waitResponseTimeout>
+    </com.orchestral.foundation.messaging.tcp.admin.OutboundEndpointConfiguration>
+    <com.orchestral.foundation.messaging.tcp.admin.OutboundSecurityPolicy id="Default Outbound Security">
+        <certificates>
+            <value>
+                <com.orchestral.core.certificate.api_6_3.OhpCertificate refId="OHP Server CA"/>
+            </value>
+        </certificates>
+        <cipherType>FIPS</cipherType>
+        <customCiphers null="true"/>
+        <minimumProtocol>TLSv10</minimumProtocol>
+        <name>Default Outbound Security</name>
+        <privateKey null="true"/>
+    </com.orchestral.foundation.messaging.tcp.admin.OutboundSecurityPolicy>
+    <com.orchestral.foundation.rest.jersey.client.impl.RestServiceConsumer id="Forms Document REST Service">
+        <baseUrl>http://localhost:27080</baseUrl>
+        <certificateNamePattern null="true"/>
+        <generationProfileIds>
+            <entry>
+                <key>Platform Administrator</key>
+                <value>Forms Document REST Service Generation Profile</value>
+            </entry>
+        </generationProfileIds>
+        <id>Forms Document REST Service</id>
+        <signingKey null="true"/>
+        <trustedCertificates/>
+    </com.orchestral.foundation.rest.jersey.client.impl.RestServiceConsumer>
+    <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration id="ClinicalPortalPrivacyService" version="1">
+        <acceptedReponseCodes/>
+        <cacheName null="true"/>
+        <cacheTimeout>3600000</cacheTimeout>
+        <cacheWsdlTimeout>0</cacheWsdlTimeout>
+        <connectTimeout null="true"/>
+        <defaultCertificateAlias null="true"/>
+        <defaultKeyAlias null="true"/>
+        <expectedPassword null="true"/>
+        <expectedUsername null="true"/>
+        <httpChunkSize null="true"/>
+        <httpHeaders/>
+        <keyStoreId null="true"/>
+        <keyStorePassword null="true"/>
+        <location>http://localhost:27080/ws/PrivacyService?wsdl</location>
+        <maintainSession>false</maintainSession>
+        <method null="true"/>
+        <mode>PAYLOAD</mode>
+        <mtomEnabled>false</mtomEnabled>
+        <name>ClinicalPortalPrivacyService</name>
+        <password null="true"/>
+        <pathInfo null="true"/>
+        <portName null="true"/>
+        <query null="true"/>
+        <requestTimeout null="true"/>
+        <security>
+            <com.orchestral.foundation.webservices.security.ClientWebServiceSecurityConfiguration refId="New Security Policy"/>
+        </security>
+        <securityConfig null="true"/>
+        <serviceName>
+            <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration-QName>
+                <localPart>Privacy</localPart>
+                <namespace>http://www.orionhealth.com/concerto/privacy/</namespace>
+            </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration-QName>
+        </serviceName>
+        <soapAction null="true"/>
+        <soapHeaders/>
+        <testInput><![CDATA[
+        <priv:getEntityAccessPolicy xmlns:priv="http://www.orionhealth.com/concerto/privacy/"><contextView>Patient</contextView><contextItem><name>Patient.Id.MRN</name><value>84568-4564</value></contextItem></priv:getEntityAccessPolicy>
+        ]]></testInput>
+        <testSoapHeaders/>
+        <trustStoreId null="true"/>
+        <trustStorePassword null="true"/>
+        <username null="true"/>
+        <validHostnamePattern null="true"/>
+    </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration id="ClinicalPortalUserStoreService" version="1">
+        <acceptedReponseCodes/>
+        <cacheName null="true"/>
+        <cacheTimeout>3600000</cacheTimeout>
+        <cacheWsdlTimeout>0</cacheWsdlTimeout>
+        <connectTimeout null="true"/>
+        <defaultCertificateAlias null="true"/>
+        <defaultKeyAlias null="true"/>
+        <expectedPassword null="true"/>
+        <expectedUsername null="true"/>
+        <httpChunkSize null="true"/>
+        <httpHeaders/>
+        <keyStoreId null="true"/>
+        <keyStorePassword null="true"/>
+        <location>http://localhost:27080/ws/UserManagementServiceSei?wsdl</location>
+        <maintainSession>false</maintainSession>
+        <method null="true"/>
+        <mode>PAYLOAD</mode>
+        <mtomEnabled>false</mtomEnabled>
+        <name>ClinicalPortalUserStoreService</name>
+        <password null="true"/>
+        <pathInfo null="true"/>
+        <portName null="true"/>
+        <query null="true"/>
+        <requestTimeout null="true"/>
+        <security>
+            <com.orchestral.foundation.webservices.security.ClientWebServiceSecurityConfiguration refId="New Security Policy"/>
+        </security>
+        <securityConfig null="true"/>
+        <serviceName>
+            <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration-QName>
+                <localPart>userManagementService</localPart>
+                <namespace>http://com.concerto.webservice.usermanagement</namespace>
+            </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration-QName>
+        </serviceName>
+        <soapAction null="true"/>
+        <soapHeaders/>
+        <testInput><![CDATA[
+			<com:getUsers xmlns:com="http://com.concerto.webservice.usermanagement"><userId>admin</userId></com:getUsers>
+        ]]></testInput>
+        <testSoapHeaders/>
+        <trustStoreId null="true"/>
+        <trustStorePassword null="true"/>
+        <username null="true"/>
+        <validHostnamePattern null="true"/>
+    </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration id="NextgateEMPIWebService" version="1">
+        <acceptedReponseCodes/>
+        <cacheName null="true"/>
+        <cacheTimeout>3600000</cacheTimeout>
+        <cacheWsdlTimeout>0</cacheWsdlTimeout>
+        <connectTimeout null="true"/>
+        <defaultCertificateAlias null="true"/>
+        <defaultKeyAlias null="true"/>
+        <expectedPassword null="true"/>
+        <expectedUsername null="true"/>
+        <httpChunkSize null="true"/>
+        <httpHeaders/>
+        <keyStoreId null="true"/>
+        <keyStorePassword null="true"/>
+        <location><![CDATA[http://<substitute-nextgate-webservice-host>:<substitute-nextgate-webservice-port>/PersonMasterIndex-PersonMasterIndex-ejb/PersonEJB?wsdl]]></location>
+        <maintainSession>false</maintainSession>
+        <method null="true"/>
+        <mode>PAYLOAD</mode>
+        <mtomEnabled>false</mtomEnabled>
+        <name>NextgateEMPIWebService</name>
+        <password null="true"/>
+        <pathInfo null="true"/>
+        <portName null="true"/>
+        <query null="true"/>
+        <requestTimeout null="true"/>
+        <security null="true"/>
+        <securityConfig null="true"/>
+        <serviceName>
+            <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration-QName>
+                <localPart>foo</localPart>
+                <namespace/>
+            </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration-QName>
+        </serviceName>
+        <soapAction null="true"/>
+        <soapHeaders/>
+        <testInput><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.index.mdm.sun.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:getEnterpriseRecordByLID>
+         <systemCode>?</systemCode>
+         <localid>?</localid>
+      </web:getEnterpriseRecordByLID>
+   </soapenv:Body>
+</soapenv:Envelope>]]></testInput>
+        <testSoapHeaders/>
+        <trustStoreId null="true"/>
+        <trustStorePassword null="true"/>
+        <username null="true"/>
+        <validHostnamePattern null="true"/>
+    </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration id="ProblemListAllergies" version="1">
+        <acceptedReponseCodes/>
+        <cacheName null="true"/>
+        <cacheTimeout>3600000</cacheTimeout>
+        <cacheWsdlTimeout>0</cacheWsdlTimeout>
+        <connectTimeout null="true"/>
+        <defaultCertificateAlias null="true"/>
+        <defaultKeyAlias null="true"/>
+        <expectedPassword null="true"/>
+        <expectedUsername null="true"/>
+        <httpChunkSize null="true"/>
+        <httpHeaders/>
+        <keyStoreId null="true"/>
+        <keyStorePassword null="true"/>
+        <location>http://localhost:27080</location>
+        <maintainSession>false</maintainSession>
+        <method null="true"/>
+        <mode>MESSAGE</mode>
+        <mtomEnabled>false</mtomEnabled>
+        <name>ProblemListAllergies</name>
+        <password>SKCDSVLWJT9072C93AFEF368365025BEA3BA7429E10947DABBA87A078BB04B7ABD812B088874BC5873</password>
+        <pathInfo>/patient/{patientId}@{patientNamespace}/problems/lists/problems</pathInfo>
+        <portName null="true"/>
+        <query null="true"/>
+        <requestTimeout null="true"/>
+        <security null="true"/>
+        <securityConfig null="true"/>
+        <serviceName null="true"/>
+        <soapAction null="true"/>
+        <soapHeaders/>
+        <testInput null="true"/>
+        <testSoapHeaders/>
+        <trustStoreId null="true"/>
+        <trustStorePassword null="true"/>
+        <username>admin</username>
+        <validHostnamePattern null="true"/>
+    </com.orchestral.foundation.webservices.client.ClientWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.security.ClientWebServiceSecurityConfiguration id="New Security Policy">
+        <algorithmSuite>BASIC256</algorithmSuite>
+        <authenticatorId null="true"/>
+        <encryptingCertificate null="true"/>
+        <keyReferenceType>SUBJECT_KEY_IDENTIFIER</keyReferenceType>
+        <mode>PLAIN_USERNAME_PASSWORD</mode>
+        <name>New Security Policy</name>
+        <password>SKCDSVLWJT92DEC7E388D228D57ED28928944CE7444E9528F0EEA85C8C3BF4ACC559F715589BD5D632</password>
+        <securityConfig null="true"/>
+        <signingKey null="true"/>
+        <trustedCertificates/>
+        <username>admin</username>
+    </com.orchestral.foundation.webservices.security.ClientWebServiceSecurityConfiguration>
+    <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration id="Default Security Policy">
+        <accessibleOverHttpsOnly>false</accessibleOverHttpsOnly>
+        <algorithmSuite>BASIC256</algorithmSuite>
+        <authenticatorId null="true"/>
+        <encryptingCertificate null="true"/>
+        <keyReferenceType>SUBJECT_KEY_IDENTIFIER</keyReferenceType>
+        <mode>PLAIN_USERNAME_PASSWORD</mode>
+        <name>Default Security Policy</name>
+        <password>SKCDSVLWJT0AA0FB17B9628CA8F21DCA66CE5A1237B123D2623E9498CB36579347B3464A19F6EAC2CC</password>
+        <securityConfig null="true"/>
+        <signingKey>
+            <com.orchestral.core.certificate.api_6_3.OhpPrivateKey refId="OHP Default Web Service Server"/>
+        </signingKey>
+        <trustedCertificates/>
+        <trustedSamlIssuers/>
+        <username>admin</username>
+    </com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration>
+    <com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration id="PrivacyService">
+        <enabled>true</enabled>
+        <security>
+            <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration refId="Default Security Policy"/>
+        </security>
+        <serviceName>PrivacyService</serviceName>
+        <transactionTimeout null="true"/>
+    </com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration id="PrivacyService_7_4">
+        <enabled>true</enabled>
+        <security>
+            <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration refId="Default Security Policy"/>
+        </security>
+        <serviceName>PrivacyService_7_4</serviceName>
+        <transactionTimeout null="true"/>
+    </com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration id="UserManagementServiceSei">
+        <enabled>true</enabled>
+        <security>
+            <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration refId="Default Security Policy"/>
+        </security>
+        <serviceName>UserManagementServiceSei</serviceName>
+        <transactionTimeout null="true"/>
+    </com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration id="com.orchestral.task.api_8_0.ws.TaskService">
+        <enabled>true</enabled>
+        <security>
+            <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration refId="Default Security Policy"/>
+        </security>
+        <serviceName>com.orchestral.task.api_8_0.ws.TaskService</serviceName>
+        <transactionTimeout null="true"/>
+    </com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration id="com.orchestral.task.api_8_1.ws.TaskService">
+        <enabled>true</enabled>
+        <security>
+            <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration refId="Default Security Policy"/>
+        </security>
+        <serviceName>com.orchestral.task.api_8_1.ws.TaskService</serviceName>
+        <transactionTimeout null="true"/>
+    </com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration>
+    <com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration id="com.orchestral.task.api_8_11.ws.TaskService">
+        <enabled>true</enabled>
+        <security>
+            <com.orchestral.foundation.webservices.security.ServerWebServiceSecurityConfiguration refId="Default Security Policy"/>
+        </security>
+        <serviceName>com.orchestral.task.api_8_11.ws.TaskService</serviceName>
+        <transactionTimeout null="true"/>
+    </com.orchestral.foundation.webservices.server.ServerWebServiceConfiguration>
+</com.orchestral.core.configuration.api_6_0.ConfigurationService>

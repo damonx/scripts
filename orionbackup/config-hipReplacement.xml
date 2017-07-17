@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><com.orchestral.core.configuration.api_6_0.ConfigurationService xmlns="http://www.orionhealth.com/configuration" version="3" date="2016-08-09T10:20:42.341" platformId="662429880" type="SNAPSHOT" username="core-platform:administrator">
+    <com.orchestral.task.api_2_0.tasktype.SimpleTaskType id="Legacy Orthopaedics Initial Assessment">
+        <accessConfiguration>
+            <com.orchestral.task.api_2_1.tasktype.TaskTypeAccessConfig>
+                <accessControlList>
+                    <entry>
+                        <key>CM Nurses</key>
+                        <value>VIEW</value>
+                    </entry>
+                    <entry>
+                        <key>Everyone</key>
+                        <value>EDIT</value>
+                    </entry>
+                </accessControlList>
+            </com.orchestral.task.api_2_1.tasktype.TaskTypeAccessConfig>
+        </accessConfiguration>
+        <assignedRolesConfiguration>
+            <com.orchestral.task.api_8_11.tasktype.TaskTypeAssignedRolesConfig>
+                <assignedRoles/>
+            </com.orchestral.task.api_8_11.tasktype.TaskTypeAssignedRolesConfig>
+        </assignedRolesConfiguration>
+        <categoryName>completeFormTask</categoryName>
+        <compositeId>uuid_14f1258a-a6b4-4e49-80ac-53aba2843dc3</compositeId>
+        <identifyingName>Legacy Orthopaedics Initial Assessment</identifyingName>
+        <modelMappings>
+            <entry>
+                <key>document</key>
+                <value>uuid_2f8c26c7-ca84-432e-a0a0-bfcff84f2923</value>
+            </entry>
+        </modelMappings>
+        <schedulingConfiguration>
+            <com.orchestral.task.api_2_0.tasktype.TaskTypeSchedulingConfig>
+                <notificationTimeDelta null="true"/>
+                <overdueTimeDelta>
+                    <com.orchestral.task.api_2_0.TimeDelta>
+                        <delta>0</delta>
+                        <unit>DAYS</unit>
+                    </com.orchestral.task.api_2_0.TimeDelta>
+                </overdueTimeDelta>
+                <recurringTaskConfiguration null="true"/>
+            </com.orchestral.task.api_2_0.tasktype.TaskTypeSchedulingConfig>
+        </schedulingConfiguration>
+    </com.orchestral.task.api_2_0.tasktype.SimpleTaskType>
+    <com.orchestral.task.api_2_0.tasktype.SimpleTaskType id="Orthopaedics Initial Assessment">
+        <accessConfiguration>
+            <com.orchestral.task.api_2_1.tasktype.TaskTypeAccessConfig>
+                <accessControlList>
+                    <entry>
+                        <key>CM Nurses</key>
+                        <value>VIEW</value>
+                    </entry>
+                    <entry>
+                        <key>Everyone</key>
+                        <value>EDIT</value>
+                    </entry>
+                </accessControlList>
+            </com.orchestral.task.api_2_1.tasktype.TaskTypeAccessConfig>
+        </accessConfiguration>
+        <assignedRolesConfiguration>
+            <com.orchestral.task.api_8_11.tasktype.TaskTypeAssignedRolesConfig>
+                <assignedRoles/>
+            </com.orchestral.task.api_8_11.tasktype.TaskTypeAssignedRolesConfig>
+        </assignedRolesConfiguration>
+        <categoryName>completeFormTask</categoryName>
+        <compositeId>uuid_ad2566d6-3156-4545-abcd-f6ef018b11c6</compositeId>
+        <identifyingName>Orthopaedics Initial Assessment</identifyingName>
+        <modelMappings>
+            <entry>
+                <key>document</key>
+                <value>uuid_7ace3f2d-895a-4f9d-bf47-db1bc77996c8</value>
+            </entry>
+        </modelMappings>
+        <schedulingConfiguration>
+            <com.orchestral.task.api_2_0.tasktype.TaskTypeSchedulingConfig>
+                <notificationTimeDelta null="true"/>
+                <overdueTimeDelta>
+                    <com.orchestral.task.api_2_0.TimeDelta>
+                        <delta>0</delta>
+                        <unit>DAYS</unit>
+                    </com.orchestral.task.api_2_0.TimeDelta>
+                </overdueTimeDelta>
+                <recurringTaskConfiguration null="true"/>
+            </com.orchestral.task.api_2_0.tasktype.TaskTypeSchedulingConfig>
+        </schedulingConfiguration>
+    </com.orchestral.task.api_2_0.tasktype.SimpleTaskType>
+    <com.orchestral.workflow.pathway.Pathway id="Hip Replacement" version="2">
+        <adhocTaskTypes/>
+        <businessProcessConfig/>
+        <initialStepName null="true"/>
+        <legacy>false</legacy>
+        <name>Hip Replacement</name>
+        <pathwayPermissionProfileId>Default</pathwayPermissionProfileId>
+        <programId>Hip Replacement</programId>
+        <programSteps/>
+        <shortDisplayName>Hip Replacement</shortDisplayName>
+        <taskTypeConfig>
+            <entry>
+                <key>Legacy Orthopaedics Initial Assessment</key>
+                <value>
+                    <com.orchestral.workflow.pathway.PathwayTaskTypeConfig>
+                        <allowAsSeries>false</allowAsSeries>
+                        <onRequest>false</onRequest>
+                        <startOnEnroll>true</startOnEnroll>
+                    </com.orchestral.workflow.pathway.PathwayTaskTypeConfig>
+                </value>
+            </entry>
+            <entry>
+                <key>Orthopaedics Initial Assessment</key>
+                <value>
+                    <com.orchestral.workflow.pathway.PathwayTaskTypeConfig>
+                        <allowAsSeries>false</allowAsSeries>
+                        <onRequest>false</onRequest>
+                        <startOnEnroll>true</startOnEnroll>
+                    </com.orchestral.workflow.pathway.PathwayTaskTypeConfig>
+                </value>
+            </entry>
+        </taskTypeConfig>
+    </com.orchestral.workflow.pathway.Pathway>
+    <com.orchestral.workflow.task.scheduler.definition.PathwayTaskType id="Legacy Orthopaedics Initial Assessment">
+        <abandonable>false</abandonable>
+        <abandonableExpiryPeriod>0</abandonableExpiryPeriod>
+        <taskType>Legacy Orthopaedics Initial Assessment</taskType>
+    </com.orchestral.workflow.task.scheduler.definition.PathwayTaskType>
+    <com.orchestral.workflow.task.scheduler.definition.PathwayTaskType id="Orthopaedics Initial Assessment">
+        <abandonable>false</abandonable>
+        <abandonableExpiryPeriod>0</abandonableExpiryPeriod>
+        <taskType>Orthopaedics Initial Assessment</taskType>
+    </com.orchestral.workflow.task.scheduler.definition.PathwayTaskType>
+</com.orchestral.core.configuration.api_6_0.ConfigurationService>

@@ -1,0 +1,13 @@
+alias setJdk7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)'
+alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export PATH=/usr/local/sbin:/usr/local/bin/:$PATH
+
+# include locally installed Cassandra in PATH
+if [ -d "$HOME/opt" ]; then
+    PATH="$PATH:$HOME/opt/cassandra/bin"
+fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/damonx/.sdkman"
+[[ -s "/Users/damonx/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/damonx/.sdkman/bin/sdkman-init.sh"

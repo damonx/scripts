@@ -17,17 +17,17 @@ A **virtual environment (venv)** is an isolated Python environment that allows y
 
 ### 2. Create a Virtual Environment
 
-\`\`\`bash
+```bash
 python3 -m venv myenv
-\`\`\`
+```
 - \`myenv\` is the name of the virtual environment folder.
 - This folder will contain a separate Python interpreter, \`pip\`, and a site-packages directory.
 
 ### 3. Activate the Virtual Environment
 
-\`\`\`bash
+```bash
 source myenv/bin/activate
-\`\`\`
+```
 - After activation, your terminal prompt will usually show \`(myenv)\`.
 
 ### 4. Upgrade pip inside the venv

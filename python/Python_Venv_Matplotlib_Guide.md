@@ -67,6 +67,8 @@ Run the script inside the virtual environment:
 
 ```bash
 python mpl_squares.py
+or
+python3 mpl_squares.py
 ```
 - A window should pop up displaying a line plot of the squares.
 

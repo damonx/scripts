@@ -32,28 +32,28 @@ source myenv/bin/activate
 
 ### 4. Upgrade pip inside the venv
 
-\`\`\`bash
+```bash
 pip install --upgrade pip
-\`\`\`
+```
 
 ### 5. Install Matplotlib
 
-\`\`\`bash
+```bash
 pip install matplotlib
-\`\`\`
+```
 
 ### 6. Verify Installation
 
-\`\`\`bash
+```bash
 python -c "import matplotlib; print(matplotlib.__version__)"
-\`\`\`
+```
 - This should print the installed version of matplotlib.
 
 ### 7. Run a Sample Script
 
 Create a file \`mpl_squares.py\` with the following content:
 
-\`\`\`python
+```python
 import matplotlib.pyplot as plt
 
 squares = [1, 4, 9, 16, 25]
@@ -61,20 +61,20 @@ squares = [1, 4, 9, 16, 25]
 fig, ax = plt.subplots()
 ax.plot(squares)
 plt.show()
-\`\`\`
+```
 
 Run the script inside the virtual environment:
 
-\`\`\`bash
+```bash
 python mpl_squares.py
-\`\`\`
+```
 - A window should pop up displaying a line plot of the squares.
 
 ### 8. Deactivate the Virtual Environment (Optional)
 
-\`\`\`bash
+```bash
 deactivate
-\`\`\`
+```
 - This returns your shell to the system Python environment.
 
 ---

@@ -10,6 +10,10 @@ import (
 	"time"
 )
 
+var client = http.Client{
+	Timeout: 10 * time.Second,
+}
+
 func main() {
 	start := time.Now()
 	ch := make(chan string)
@@ -24,21 +28,24 @@ func main() {
 
 func fetch(url string, ch chan<- string) {
 	start := time.Now()
-	// Ensure the URL has the http:// prefix
+
 	if !strings.HasPrefix(url, "http://") {
 		url = "http://" + url
 	}
-	resp, err := http.Get(url)
+
+	resp, err := client.Get(url)
 	if err != nil {
-		ch <- fmt.Sprint(err) // send to channel ch
+		ch <- fmt.Sprintf("error fetching %s: %v", url, err)
 		return
 	}
+	defer resp.Body.Close()
+
 	nbytes, err := io.Copy(ioutil.Discard, resp.Body)
-	resp.Body.Close()
 	if err != nil {
 		ch <- fmt.Sprintf("while reading %s: %v", url, err)
 		return
 	}
+
 	secs := time.Since(start).Seconds()
 	ch <- fmt.Sprintf("%.2fs  %7d  %s", secs, nbytes, url)
 }

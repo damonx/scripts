@@ -1,5 +1,6 @@
 webapp:
-  numberOfWebappReplicas: 4
+  numberOfWebappReplicas: 1
+  nodePort: 30080
 
 dockerRepoName: richardchesterwood
 

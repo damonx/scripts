@@ -1,10 +1,10 @@
 [user]
 	name = Damon Xu
-	email = damon.xu@spark.co.nz
+	email = akldamonx@icloud.com
 [core]
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = /Users/t827056/.gitignore_global
+	excludesfile = /Users/<damonx>/.gitignore_global
 [web]
 	browser = google-chrome
 [instaweb]
@@ -211,9 +211,9 @@
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 # [http]
-#    proxy = http://T827056:Bigyellowtruck2027@websense.telecom.tcnz.net:8080
+#    proxy = 
 # [https]
-#    proxy = http://T827056:Bigyellowtruck2027@websense.telecom.tcnz.net:8080
+#    proxy = 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -223,4 +223,4 @@
 	timestampResolution = 11000 nanoseconds
 	minRacyThreshold = 0 nanoseconds
 [commit]
-	template = /Users/t827056/.stCommitMsg
+	template = /Users/<damonx>/.stCommitMsg

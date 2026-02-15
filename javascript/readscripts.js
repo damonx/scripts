@@ -10,5 +10,64 @@ function filter(array, test) {
   return passed;
 }
 
-console.log(filter(SCRIPTS, script => script.living));
+console.log(SCRIPTS.filter(s => s.living).map);
+console.log(SCRIPTS.filter(s => s.direction == "rtl").map(s => s.name));
+
+//console.log(filter(SCRIPTS, script => script.living));
 // → [{name: "Adlam", …}, …]
+
+// Count the number of scripts in a given direction
+console.log(SCRIPTS.filter(s => s.direction == "rtl").length);
+
+function characterCount(script) {
+  return script.ranges.reduce((count, [from, to]) => {
+    return count + (to - from);
+  }, 0);
+}
+
+console.log(SCRIPTS.reduce((a, b) => {
+  return characterCount(a) < characterCount(b) ? b : a;
+}));
+// → {name: "Han", …}
+
+function average(array) {
+  return array.reduce((a, b) => a + b) / array.length;
+}
+
+console.log(Math.round(average(
+  SCRIPTS.filter(s => s.living).map(s => s.year))));
+// → 1165
+console.log(Math.round(average(
+  SCRIPTS.filter(s => !s.living).map(s => s.year))));
+// → 204
+
+
+// More functional way:
+function averageYear(living) {
+  const result = SCRIPTS.reduce(
+    (acc, script) => {
+      if (script.living === living) {
+        acc.sum += script.year;
+        acc.count++;
+      }
+      return acc;
+    },
+    { sum: 0, count: 0 }
+  );
+
+  return result.count === 0 ? 0 : result.sum / result.count;
+}
+
+console.log(Math.round(averageYear(true)));
+console.log(Math.round(averageYear(false)));
+
+function characterScript(code) {
+  return SCRIPTS.find(script =>
+    script.ranges.some(([from, to]) =>
+      code >= from && code < to
+    )
+  ) || null;
+}
+
+console.log(characterScript(121));
+// → {name: "Latin", …}

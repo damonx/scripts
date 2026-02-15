@@ -44,3 +44,7 @@ repeat(3, n => {
 // [ 'a', 'b' ]
 ["A", "B"].map(l => l.toLowerCase());
 //[ 'a', 'b' ]
+
+// reduce
+console.log([1, 2, 3, 4, 5].reduce((a, b) => a + b, 0));
+// → 15

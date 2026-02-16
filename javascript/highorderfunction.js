@@ -48,3 +48,20 @@ repeat(3, n => {
 // reduce
 console.log([1, 2, 3, 4, 5].reduce((a, b) => a + b, 0));
 // → 15
+
+function countBy(items, groupName) {
+    let counts = [];
+    for (let item of items) {
+        let name = groupName(item);
+        let known = counts.find(c => c.name == name);
+        if (!known) {
+            counts.push({name, count: 1});
+        } else {
+            known.count++;
+        }
+    }
+    return counts;
+}
+
+console.log(countBy([1, 2, 3, 4, 5], n => n % 2 == 0 ? "even" : "odd"));
+// → [{name: "odd", count: 3}, {name: "even", count: 2}]

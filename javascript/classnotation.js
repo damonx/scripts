@@ -15,6 +15,20 @@ console.log(Object.getPrototypeOf(Rabbit) == Function.prototype);
 console.log(Object.getPrototypeOf(killerRabbit) == Rabbit.prototype);
 // → true // → true
 
+console.log("-----------------------------");
+Rabbit.prototype.teeth = "small";
+console.log(killerRabbit.teeth);
+// → small
+killerRabbit.teeth = "long, sharp, and bloody";
+console.log(killerRabbit.teeth);
+// → long, sharp, and bloody
+console.log((new Rabbit("basic", "Hello")).teeth);
+// → small
+console.log(Rabbit.prototype.teeth);
+// → small
+console.log("-----------------------------");
+
+
 /**
  * Old school way, before 2015.
  */
@@ -64,3 +78,11 @@ class RandomSource {
 
 console.log(new RandomSource(10).getNumber())
 
+// Overriding toString method.
+Rabbit.prototype.toString = function() {
+  return `a ${this.type} rabbit`;
+};
+
+console.log("Use String() function to call toString(): ", String(killerRabbit));
+console.log("Call toString() method directly: ", killerRabbit.toString());
+// → a killer rabbit

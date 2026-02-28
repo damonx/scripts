@@ -1,0 +1,1 @@
+To create a promise that does not immediately resolve, you can use Promise as a constructor. It has a somewhat odd interface: the constructor expects a function as its argument, which it immediately calls, passing it a function that it can use to resolve the promise.

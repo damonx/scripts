@@ -2,6 +2,7 @@ const fs = require('fs');
 
 let fifteen = Promise.resolve(15);
 fifteen.then(value => console.log(`Got value: ${value}`)); // 15
+fifteen.then(console.log); // 15
 
 function readTextFile(filename, callback) {
     fs.readFile(filename, 'utf8', (err, data) => {
@@ -13,12 +14,30 @@ function readTextFile(filename, callback) {
 }
 
 function textFile(filename) {
-    return new Promise(resolve => {
-        readTextFile(filename, text => resolve(text));
+  return new Promise((resolve, reject) => {
+    readTextFile(filename, (text, error) => {
+      if (error) reject(error);
+      else resolve(text);
     });
+  });
 }
 
-textFile("plans.txt").then(console.log);
+// function textFile(filename) {
+//     return new Promise(resolve => {
+//         readTextFile(filename, text => resolve(text));
+//     });
+// }
+// 读取命令行参数
+const filename = process.argv[2];
+
+if (!filename) {
+  console.log("Usage: node async-promise.js <filename>");
+  process.exit(1);
+}
+
+textFile(filename)
+    .then(console.log)
+    .catch(console.error);
 
 function jsonFile(filename) {
   return textFile(filename).then(JSON.parse);

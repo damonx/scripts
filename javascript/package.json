@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "date-names": "^0.1.13",
     "ini": "^6.0.0",

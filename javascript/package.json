@@ -5,6 +5,7 @@
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "ini": "^6.0.0",
+    "mime-types": "^2.1.0",
     "ordinal": "^1.0.3"
   },
   "name": "",

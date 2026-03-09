@@ -1,0 +1,34 @@
+alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
+alias setJdk9='export JAVA_HOME=$(/usr/libexec/java_home -v 1.9)'
+alias setJdk11='export JAVA_HOME=$(/usr/libexec/java_home -v 11)'
+alias setJdk17='export JAVA_HOME=$(/usr/libexec/java_home -v 17)'
+alias setJdk21='export JAVA_HOME=$(/usr/libexec/java_home -v 21)'
+alias setJdk25='export JAVA_HOME=$(/usr/libexec/java_home -v 25)'
+export JAVA_HOME=$(/usr/libexec/java_home -v 21)
+export PATH=/usr/local/sbin:/usr/local/bin/:$HOME/.local/pipx/venvs/pytest/bin:$PATH
+export GOPATH=~/Development/golangpath
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+alias pg_start="launchctl load ~/Library/LaunchAgents"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents"
+
+# GOLANG PATH
+export GOPATH=$HOME/golang
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/t827056/.sdkman"
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
+
+prepend() { 
+    [ -d "$2" ] && eval $1=\"$2\$\{$1:+':'\$$1\}\" && export $1 ;
+}
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+. "$HOME/.cargo/env"
+
+export DOCKER_USERNAME="akldamonx"
+export DOCKER_PASSWORD="damonx1508e"
+export OPENAI_API_KEY=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
+eval "$(starship init bash)"
+export PATH=$PATH:~/kafka_2.13-4.1.0/bin/

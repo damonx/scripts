@@ -2,8 +2,8 @@ class InputError extends Error {}
 
 function promptDirection(question) {
   let result = prompt(question);
-  if (result.toLowerCase() == "left") return "L";
-  if (result.toLowerCase() == "right") return "R";
+  if (result.toLowerCase() === "left") return "L";
+  if (result.toLowerCase() === "right") return "R";
   throw new InputError("Invalid direction: " + result);
 }
 

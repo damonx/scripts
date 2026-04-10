@@ -22,13 +22,14 @@ const server = http.createServer((req, res) => {
     req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString();
       const message = parsedBody.split('=')[1];
-      fs.writeFileSync('message.txt', message);
-      console.log("provided message: ", message);
+      fs.writeFile('message.txt', message, err => {
+        res.statusCode = 302;
+        res.setHeader('Location', '/');
+        return res.end();
+      });
     });
-    res.writeHead(302, {'Location': '/'});
-    return res.end();
   }
-  //console.log(req.url, req.method, req.headers);
+  
   res.setHeader('Content-Type', 'text/html');
   res.end('<h1>Hey Damon, this is my first HTML page!</h1>');
 });

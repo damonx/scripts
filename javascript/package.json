@@ -1,11 +1,11 @@
 {
-  "type": "module",
   "dependencies": {
     "date-names": "^0.1.13",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "ini": "^6.0.0",
     "mime-types": "^2.1.0",
+    "opossum": "^5.0.1",
     "ordinal": "^1.0.3"
   },
   "name": "",

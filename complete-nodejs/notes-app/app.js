@@ -27,9 +27,7 @@ y.command({
             type: 'string'
         }
     },
-    handler: (argv) => {
-        notes.addNote(argv.title, argv.body);
-    }
+    handler: (argv) => notes.addNote(argv.title, argv.body)
 });
 
 
@@ -44,17 +42,23 @@ y.command({
             type: 'string'
         }
     },
-    handler: (argv) => {
-        notes.removeNote(argv.title);
-    }
+    handler: (argv) => notes.removeNote(argv.title)
 });
 
 // Create read command
 y.command({
     command: 'read',
     describe: 'Read a note',
-    handler() {
+    builder: {
+        title: {
+            describe: 'Note title',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: (argv) => {
         console.log('Reading the note!');
+        notes.readNote(argv.title);
     }
 });
 
@@ -62,8 +66,9 @@ y.command({
 y.command({
     command: 'list',
     describe: 'List your notes',
-    handler() {
-        console.log('Listing out all notes!');
+    handler: (argv) => {
+        chalk.underline.italic.inverse.bold.green('Listing out all notes!');
+        notes.listNotes(argv.title);
     }
 });
 
